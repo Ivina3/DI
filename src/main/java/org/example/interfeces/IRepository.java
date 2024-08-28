@@ -1,8 +1,11 @@
 package org.example.interfeces;
 
+import org.example.Person;
+
+import java.util.List;
+
 public interface IRepository {
-    void add();
-    void remove();
-    void update();
-    void get();
+    void Add(Person person);
+    Person GetById(Person person);
+    List<Person> GetAll();
 }
