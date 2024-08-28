@@ -6,8 +6,9 @@ public class ServiceA implements IService {
     Person person;
 
     @Override
-    public void create(Person person) {
+    public Person create(Person person) {
     this.person=person;
+        return person;
     }
 
     @Override
